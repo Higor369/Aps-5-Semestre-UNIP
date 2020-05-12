@@ -1,0 +1,10 @@
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.Form1.resources
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.Properties.Resources.resources
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.GenerateResource.cache
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\higor\Desktop\ChatUnip\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
