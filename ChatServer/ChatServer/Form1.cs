@@ -30,8 +30,9 @@ namespace ChatServer
         TcpClient tcpClient;
         NetworkStream networkSream;
         Thread thInteraction;
+        string pulaLinha = @"
+";
 
-      
 
         public bool connect()
         {
@@ -64,7 +65,7 @@ namespace ChatServer
 
             tcpListener.Stop();
 
-            setMsg("->Desconectando...", true);
+            setMsg(pulaLinha + "->Desconectando...", true);
 
         }
 
@@ -114,7 +115,7 @@ namespace ChatServer
             {
                 if (burlar == true || podeEscrever() == true)
                 {
-                    textDialogo.Text += "Eu: " + message + "\n" ;
+                    textDialogo.Text += pulaLinha + "Eu: " + message;
                 }
             }
         }
@@ -130,7 +131,7 @@ namespace ChatServer
             {
                 if (podeEscrever() == true)
                 {
-                    textDialogo.Text += "Client: " + message +"\n" ;
+                    textDialogo.Text += pulaLinha + "Client: " + message;
                 }
             }
         }
@@ -139,7 +140,7 @@ namespace ChatServer
         {
             if (connect())
             {
-                setMsg("-> Aguardando uma conexão",true);
+                setMsg(pulaLinha + "-> Aguardando uma conexão" , true);
             }
             thInteraction = new Thread(new ThreadStart(interaction));
             thInteraction.IsBackground = true;
@@ -153,7 +154,7 @@ namespace ChatServer
             try
             {
                 acceptConnection();
-                setMsg("-> Conexão aceita", true);
+                setMsg(pulaLinha + "-> Conexão aceita" , true);
                 do
                 {
                     networkSream = tcpClient.GetStream();
@@ -193,7 +194,7 @@ namespace ChatServer
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            setMsg("-> Encerrando conexão com o servidor", true);
+            setMsg("-> Encerrando conexão com o servidor" + pulaLinha, true);
         }
 
      

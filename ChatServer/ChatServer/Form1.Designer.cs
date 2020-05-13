@@ -37,20 +37,22 @@
             // 
             // textEscreva
             // 
-            this.textEscreva.Location = new System.Drawing.Point(17, 276);
+            this.textEscreva.Location = new System.Drawing.Point(12, 275);
             this.textEscreva.Multiline = true;
             this.textEscreva.Name = "textEscreva";
-            this.textEscreva.Size = new System.Drawing.Size(324, 51);
+            this.textEscreva.Size = new System.Drawing.Size(294, 51);
             this.textEscreva.TabIndex = 0;
             this.textEscreva.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textEscreva_KeyDown);
             this.textEscreva.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEscreva_KeyUp);
             // 
             // textDialogo
             // 
-            this.textDialogo.Location = new System.Drawing.Point(15, 44);
+            this.textDialogo.BackColor = System.Drawing.Color.White;
+            this.textDialogo.Location = new System.Drawing.Point(12, 44);
             this.textDialogo.Multiline = true;
             this.textDialogo.Name = "textDialogo";
-            this.textDialogo.Size = new System.Drawing.Size(324, 213);
+            this.textDialogo.ReadOnly = true;
+            this.textDialogo.Size = new System.Drawing.Size(294, 213);
             this.textDialogo.TabIndex = 1;
             // 
             // label1
@@ -75,13 +77,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 338);
+            this.ClientSize = new System.Drawing.Size(314, 338);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textDialogo);
             this.Controls.Add(this.textEscreva);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Servidor";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

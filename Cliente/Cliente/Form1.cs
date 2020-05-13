@@ -18,6 +18,8 @@ namespace Cliente
         TcpClient tcpClient;
         NetworkStream networkSream;
         Thread thInteraction;
+        string pulaLinha = @"
+";
 
         public Form1()
         {
@@ -27,7 +29,7 @@ namespace Cliente
         public void connect()
         {
             tcpClient = new TcpClient();
-            setMsg("-> Estabelecendo conexão");
+            setMsg(pulaLinha + "-> Estabelecendo conexão" );
             tcpClient.Connect("127.0.0.1", 8000);
 
         }
@@ -65,7 +67,8 @@ namespace Cliente
             }
             else
             {
-                textDialogo.Text += "\nEu: " + mensagem ;
+                textDialogo.Text += pulaLinha + @"Eu: " + mensagem ;
+
 
             }
         }
@@ -79,8 +82,7 @@ namespace Cliente
             }
             else
             {
-                textDialogo.Text += "\nServer: " + mensagem ;
-
+                textDialogo.Text += pulaLinha + @"Server: " + mensagem ;
             }
         }
 
@@ -103,7 +105,7 @@ namespace Cliente
                     }
                     else
                     {
-                        setMsg("-> erro no processamento, contate o desenvolvedor");
+                        setMsg(pulaLinha + "-> erro no processamento, contate o desenvolvedor" );
                         disconect();
                     }
 
@@ -125,7 +127,7 @@ namespace Cliente
                 }
                 else
                 {
-                    setMsg("-> Erro no processamento, contate o desenvolvedor");
+                    setMsg(pulaLinha + "-> Erro no processamento, contate o desenvolvedor");
                 }
                 
                 
